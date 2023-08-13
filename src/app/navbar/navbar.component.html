@@ -1,24 +1,30 @@
-<div class="hero">
-    <div class="hero-text">
-      <h1>Your Hero Text Here</h1>
-      <p>Some description about your website</p>
+<body>
+
+
+
+
+    <div class="navbar">
+        <div class="logo"><img src="/src/assets/home/logo.png" style="height: 53px;width: 103px;" alt="">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- <img src="/assets/banner.png" style="width: auto;height: 100%;" alt=""> -->
     </div>
-  </div>
-  
-<div class="navbar">
-<div class="logo"><img src="/assets/image-removebg-preview (1) 1.png" style="height: 53px;width: 103px;" alt=""></div>
-<div class="menu-icon" id="menu-icon">
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
-</div>
-<ul class="nav-list" id="nav-list">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Products</a></li>
-  <li><a href="#">Contact</a></li>
-</ul>
-<!-- <img src="/assets/banner.png" style="width: auto;height: 100%;" alt=""> -->
-</div>
-<div class="content">
-<!-- Your page content here -->
-</div>
+    <script>const menuIcon = document.getElementById('menu-icon');
+        const navList = document.getElementById('nav-list');
+        
+        menuIcon.addEventListener('click', () => {
+          navList.classList.toggle('active');
+        });</script>
+
+
+
+</body>
