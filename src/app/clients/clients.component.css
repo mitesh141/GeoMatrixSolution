@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.frame {
+    width: 1000px; /* Set the fixed width of the frame */
+    height: 220px; /* Set the fixed height of the frame */
+    /* border: 1px solid gray; */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.content-container {
+    display: flex;
+    animation: linearMove 5s linear infinite;
+}
+
+.content {
+    display: flex;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    
+}
+.headings{
+    color: blue;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+@keyframes linearMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px); /* Move back the entire frame width */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .content img {
+        width: 150px;
+        height: 150px;
+    }
+}
