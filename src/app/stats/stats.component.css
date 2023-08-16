@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .flex-container > div {
+    display: flex; /* Use flex display for the individual divs */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    width: 400px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center; /* Center align text horizontally */
+    
+  }
+  
+  .f2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  
+  .text {
+    margin-top: 10px; /* Adjust the margin as needed */
+    font-style: italic;
+    font-size: larger;
+    
+  }
+  
+  .subtitle {
+    font-size: 20px; /* Adjust the subtitle font size */
+    color: rgb(0, 0, 0); /* Change the subtitle color */
+  }
+  

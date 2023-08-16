@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    top: 30%;
+    /* left: 70%; */
+    left: 16px;
+    font-size: x-large;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    left: 16px;
+    color: red;
+    font-size: larger;
+  }
+  
+  
+img{
+    width: 100%;
+    height: auto;
+  }

@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .navbar {
 
   display: flex;
@@ -9,9 +6,9 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background: linear-gradient(180deg, rgba(127, 132, 243, 0.35) 40.94%, rgba(217, 217, 217, 0.00) 100%);
+  background: #001128;
   /* Adjusted box shadow for a gradient border effect */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
   backdrop-filter: blur(5px);
   z-index: 1000;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -22,8 +19,10 @@
 
 .logo {
 
-  margin-top: 4;
-  background-image: url("/GeoMatrixSolution/src/assets/home/logo.png");
+  /* margin-top: 4; */
+  padding: 10px;
+  padding-left: 20px;
+  padding-bottom: 4px;
 
 
 }
@@ -38,7 +37,7 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  /* background-color: #333; */
   margin: 3px 0;
 }
 
@@ -58,7 +57,7 @@
 
 .nav-list a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   
 }
 
