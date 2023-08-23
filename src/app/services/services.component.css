@@ -1,72 +1,74 @@
-
-
-.services {
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0.45) 0%, rgba(131, 36, 84, 0.70) 26.35%, rgba(0, 74, 173, 0.70) 100%);
-    padding: 60px;
-    margin-bottom: 40px;
-}
-
-.card {
-    display: flex;
-    width: 900px;
-    height: 400px;
-    margin: 50px auto;
-    border: 1px solid #000000;
-    background-color: #D9D9D9;
-}
-
-.left-side {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.left-side h1 {
-    padding-left: 20px;
-    padding-top: 50px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
     
 }
 
-.left-side .text-overlay {
-    padding: 20px;
-    color: #000000;
-    padding-bottom: 90px;
+
+.about-section{
+    background: url(https://media.istockphoto.com/id/1320950393/photo/cars-on-production-line-in-factory.jpg?s=612x612&w=0&k=20&c=WgJLxtOWIGt80cbC0OFc3wQAhraIxlz_H7l-ySDxkOw=) no-repeat left;
+    background-size: 55%;
+   
+    overflow: hidden;
+    padding: 80px 0;
+    margin-bottom: 70px;
 }
 
-.right-side {
-    flex: 1;
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 120px;
+    border: 1px solid black;
+    
+    
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
 }
 
-.right-side img {
-    max-width: 100%;
-    max-height: 100%;
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
 }
 
-img {
-    height: 400px;
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
 }
 
-@media (max-width: 600px) {
-    .card {
-        flex-direction: column; /* Stack the elements vertically on smaller screens */
-        width: auto; /* Allow card to take full width on mobile */
-        height: auto; /* Allow card to adjust height based on content */
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
     }
-
-    .left-side,
-    .right-side {
-        flex: auto; /* Distribute space evenly between the two sides */
-    }
-
-    .right-side img {
-        order: -1; /* Move the image to the top on mobile */
-    }
-
-    .left-side .text-overlay {
-        text-align: center; /* Center-align text on mobile */
+    .inner-container{
+        padding: 60px;
     }
 }
