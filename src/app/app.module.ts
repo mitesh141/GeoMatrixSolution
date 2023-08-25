@@ -12,6 +12,8 @@ import { StatsComponent } from './stats/stats.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './footer/footer.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
