@@ -8,8 +8,8 @@
 
 
 .about-section{
-    background: url(https://media.istockphoto.com/id/1320950393/photo/cars-on-production-line-in-factory.jpg?s=612x612&w=0&k=20&c=WgJLxtOWIGt80cbC0OFc3wQAhraIxlz_H7l-ySDxkOw=) no-repeat left;
-    background-size: 55%;
+    background: url(https://www.kbengineering.in/assets/images/geo_img/geo.jpg) no-repeat left;
+    background-size: 65%;
    
     overflow: hidden;
     padding: 80px 0;
@@ -30,6 +30,17 @@
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
+    
+}
+ h1::after{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    
+    display: block;
+    margin: auto;
+    margin-right: 800px;
     
 }
 

@@ -7,6 +7,17 @@ footer {
     text-align: left;
     
 }
+.footer-heading::after{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: rgb(255, 254, 254);
+    
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    float: left;
+}
 
 .footer-bottom {
     text-align: center;
@@ -52,6 +63,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: azure;
      /* Center icons and text horizontally */
     
 }
@@ -59,18 +71,25 @@ footer {
 /* Styling for the contact icons */
 .contact-icons i {
     color: white;
+    font-size: 24px;
 }
-
+.contact-icons p{
+    color: rgb(219, 216, 216);
+}
 /* Styling for LinkedIn and WhatsApp icons */
 .social-icons-info {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+}
+.quick-links a{
+    color:rgb(219, 216, 216) ;
 }
 
 /* Styling for white and larger icons */
 .social-icons-info a i {
     color: white;
-    font-size: 24px;
+    font-size: 29px;
+    margin-top: 10px;
 }
 
 /* Media queries for responsiveness */
