@@ -1,3 +1,31 @@
+// import { Component, OnInit } from '@angular/core';
+
+// @Component({
+//   selector: 'app-about',
+//   templateUrl: './about.component.html',
+//   styleUrls: ['./about.component.css']
+// })
+// export class AboutComponent implements OnInit {
+
+//   constructor() { }
+
+//   ngOnInit(): void {
+//   }
+
+// // Added below by Mally popup trial
+//   showPopup = false;
+
+//   openPopup(): void {
+//     this.showPopup = true;
+//   }
+
+//   closePopup(): void {
+//     this.showPopup = false;
+//   }
+
+// }
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +33,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent{
 
-  constructor() { }
+// Added below by Mally popup trial
+  showPopup = false;
 
-  ngOnInit(): void {
+  openPopup(): void {
+    this.showPopup = true;
+  }
+
+  closePopup(): void {
+    this.showPopup = false;
   }
 
 }

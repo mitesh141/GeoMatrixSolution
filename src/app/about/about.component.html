@@ -22,6 +22,14 @@
                         <p><button id="close-button">Close</button></p>
                     </div>
                 </div>
+
+                <!-- Popup trial By Mally -->
+                <div>
+                    <!-- main-component.component.html -->
+                    <button (click)="openPopup()">Open Image Popup</button>
+                    <app-image-popup *ngIf="showPopup" (close)="closePopup()"></app-image-popup>
+                </div>
+
             </div>
         </div>
         <div class="parent">

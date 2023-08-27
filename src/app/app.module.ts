@@ -13,6 +13,7 @@ import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './footer/footer.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImagePopupComponent } from './image-popup/image-popup.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     StatsComponent,
     ServicesComponent,
     ClientsComponent,
-    FooterComponent
+    FooterComponent,
+    ImagePopupComponent
   ],
   imports: [
     BrowserModule,
