@@ -7,6 +7,9 @@ footer {
     text-align: left;
     
 }
+.footer-heading h1{
+    font-size:larger;
+}
 .footer-heading::after{
     content: "";
     height: 4px;
@@ -21,7 +24,7 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    background-color: blue;
+    background-color: rgb(37, 37, 37);
     padding: 10px;
     color: white;
 }

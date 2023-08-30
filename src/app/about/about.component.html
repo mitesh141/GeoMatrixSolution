@@ -1,4 +1,4 @@
-<div class="main">
+<div [ngClass]="{'scale-in-bottom': isInView}" class="main">
 
     <h1 class="top-head">
         About Us
@@ -13,20 +13,12 @@
                     inception was catalyzed by a visionary pursuit to revolutionize precision engineering. As of today,
                     we proudly reign as the premier source for bespoke machining solutions, intricately customizing
                     solutions that resonate with the very pulse of mechanized excellence..</p>
-                <button class="popup-button">View TVU Cerfification</button>
-
-                <!-- Popup with image -->
-                <div id="image-popup" class="popup">
-                    <div class="popup-content">
-                        <img id="popup-image" src="./assets/home/abt1.png" alt="Popup Image">
-                        <p><button id="close-button">Close</button></p>
-                    </div>
-                </div>
+                
 
                 <!-- Popup trial By Mally -->
                 <div>
                     <!-- main-component.component.html -->
-                    <button (click)="openPopup()">Open Image Popup</button>
+                    <button (click)="openPopup()">View TVU Certification</button>
                     <app-image-popup *ngIf="showPopup" (close)="closePopup()"></app-image-popup>
                 </div>
 

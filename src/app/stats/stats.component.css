@@ -1,43 +1,92 @@
 .flex-container {
-    display: flex;
-    align-items: center; /* Vertically center align items */
-    justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .flex-container > div {
-    display: flex; /* Use flex display for the individual divs */
-    align-items: center; /* Center align items vertically */
-    justify-content: center; /* Center align items horizontally */
-    flex-direction: column; /* Stack elements vertically */
-    width: 400px;
-    margin: 10px;
-    font-size: 30px;
-    text-align: center; /* Center align text horizontally */
-    
-  }
-  
-  .f2 {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
-  
-  .text {
-    margin-top: 10px; /* Adjust the margin as needed */
-    font-style: italic;
-    font-size: larger;
-    
-  }
-  
-  .subtitle {
-    font-size: 20px; /* Adjust the subtitle font size */
-    color: rgb(0, 0, 0); /* Change the subtitle color */
+  display: flex;
+  align-items: center;
+  /* Vertically center align items */
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.flex-container>div {
+  display: flex;
+  /* Use flex display for the individual divs */
+  align-items: center;
+  /* Center align items vertically */
+  justify-content: center;
+  /* Center align items horizontally */
+  flex-direction: column;
+  /* Stack elements vertically */
+  width: 400px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  /* Center align text horizontally */
+
+}
+
+.f2 {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.text {
+  margin-top: 10px;
+  /* Adjust the margin as needed */
+  font-style: italic;
+  font-size: larger;
+
+}
+
+.subtitle {
+  font-size: 20px;
+  /* Adjust the subtitle font size */
+  color: rgb(0, 0, 0);
+  /* Change the subtitle color */
+}
+
+.counter-container {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+.scale-in-bottom {
+  -webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
   }
 
-  .counter-container {
-    font-size: 24px;
-    text-align: center;
-    padding: 20px;
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
   }
-  
+}
+
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}

@@ -1,21 +1,43 @@
 /* image-popup.component.css */
+
+/* Overlay for background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+  z-index: 99; /* Behind the popup */
+}
+
 .popupTrial {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  background-color: white;
+  border-radius: 20px;
+}
+
+img {
+  height: 600px; /* Set your desired fixed height */
+  width: auto; /* Adjust the width accordingly */
+  object-fit: cover; /* Preserve aspect ratio */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 101; /* Above the popup */
+}

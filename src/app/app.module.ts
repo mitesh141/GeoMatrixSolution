@@ -14,6 +14,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './footer/footer.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagePopupComponent } from './image-popup/image-popup.component';
+import { FixtureComponent } from './fixture/fixture.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ImagePopupComponent } from './image-popup/image-popup.component';
     ServicesComponent,
     ClientsComponent,
     FooterComponent,
-    ImagePopupComponent
+    ImagePopupComponent,
+    FixtureComponent
   ],
   imports: [
     BrowserModule,

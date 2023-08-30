@@ -1,44 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component, HostListener, Renderer2, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-stats',
   templateUrl: './stats.component.html',
-  styleUrls: ['./stats.component.css'],
-  animations: [
-    trigger('count', [
-      state('increment', style({ transform: 'scale(1.1)' })),
-      transition('* <=> increment', [
-        animate('1s ease-out')
-      ])
-    ])
-  ]
+  styleUrls: ['./stats.component.css']
 })
-
 export class StatsComponent implements OnInit {
+  isInView = false;
 
-  constructor() { }
-
-  currentCount: number = 0;
-  counterState: string = 'initial';
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   ngOnInit(): void {
-    this.startCounter();
+    // Initialize the 'isInView' value when the component loads
+    this.checkDivInView();
   }
 
-  startCounter(): void {
-    const targetCount = 1000;
-    const step = Math.ceil(targetCount / 100);
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.checkDivInView();
+  }
 
-    const interval = setInterval(() => {
-      if (this.currentCount < targetCount) {
-        this.currentCount += step;
-        this.counterState = 'increment';
-      } else {
-        this.currentCount = targetCount;
-        this.counterState = 'initial';
-        clearInterval(interval);
-      }
-    }, 10);
+  private checkDivInView() {
+    const elementPosition = this.el.nativeElement.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Check if the target div is within the viewport
+    this.isInView = elementPosition.top < windowHeight && elementPosition.bottom >= 0;
   }
 }
