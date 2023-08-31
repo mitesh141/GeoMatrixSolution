@@ -15,6 +15,10 @@ import { FooterComponent } from './footer/footer.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagePopupComponent } from './image-popup/image-popup.component';
 import { FixtureComponent } from './fixture/fixture.component';
+import { MachinecompComponent } from './machinecomp/machinecomp.component';
+import { TopmachinesComponent } from './topmachines/topmachines.component';
+import { SpecialcompComponent } from './specialcomp/specialcomp.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { FixtureComponent } from './fixture/fixture.component';
     ClientsComponent,
     FooterComponent,
     ImagePopupComponent,
-    FixtureComponent
+    FixtureComponent,
+    MachinecompComponent,
+    TopmachinesComponent,
+    SpecialcompComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
