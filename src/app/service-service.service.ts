@@ -22,25 +22,37 @@ export class ServiceServiceService {
 
   spclImages = [
     {
-        src: './assets/services/producttest.png',
+        src: './assets/services/specialcomp1.jpg',
         title: 'Image Title 1',
         subtitle: 'Subtitle 1',
         desc: 'Description 1'
     },
     {
-      src: './assets/services/producttest.png',
+      src: './assets/services/specialcomp2.jpg',
       title: 'Image Title 1',
       subtitle: 'Subtitle 1',
       desc: 'Description 1'
     },
     {
-    src: './assets/services/producttest.png',
+    src: './assets/services/specialcomp3.jpg',
     title: 'Image Title 1',
     subtitle: 'Subtitle 1',
     desc: 'Description 1'
   },
   {
-    src: './assets/services/producttest.png',
+    src: './assets/services/specialcomp4.jpg',
+    title: 'Image Title 1',
+    subtitle: 'Subtitle 1',
+    desc: 'Description 1'
+  },
+  {
+    src: './assets/services/specialcomp5.jpg',
+    title: 'Image Title 1',
+    subtitle: 'Subtitle 1',
+    desc: 'Description 1'
+  },
+  {
+    src: './assets/services/specialcomp6.jpg',
     title: 'Image Title 1',
     subtitle: 'Subtitle 1',
     desc: 'Description 1'
@@ -50,25 +62,43 @@ export class ServiceServiceService {
 
   machinedImages = [
     {
-        src: './assets/services/producttest.png',
+        src: './assets/services/machined com1.jpg',
         title: 'Image Title 1',
         subtitle: 'Subtitle 1',
         desc: 'Description 1'
     },
     {
-      src: './assets/services/producttest.png',
+      src: './assets/services/machined comp2.jpg',
       title: 'Image Title 1',
       subtitle: 'Subtitle 1',
       desc: 'Description 1'
     },
     {
-    src: './assets/services/producttest.png',
+    src: './assets/services/machined comp3.jpg',
     title: 'Image Title 1',
     subtitle: 'Subtitle 1',
     desc: 'Description 1'
   },
   {
-    src: './assets/services/producttest.png',
+    src: './assets/services/machined comp4.jpg',
+    title: 'Image Title 1',
+    subtitle: 'Subtitle 1',
+    desc: 'Description 1'
+  },
+  {
+    src: './assets/services/machined comp5.jpg',
+    title: 'Image Title 1',
+    subtitle: 'Subtitle 1',
+    desc: 'Description 1'
+  },
+  {
+    src: './assets/services/machined comp6.jpg',
+    title: 'Image Title 1',
+    subtitle: 'Subtitle 1',
+    desc: 'Description 1'
+  },
+  {
+    src: './assets/services/machined comp7.jpg',
     title: 'Image Title 1',
     subtitle: 'Subtitle 1',
     desc: 'Description 1'
