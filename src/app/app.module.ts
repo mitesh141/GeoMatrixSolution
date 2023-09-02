@@ -19,6 +19,7 @@ import { MachinecompComponent } from './featured/machinecomp/machinecomp.compone
 import { TopmachinesComponent } from './topmachines/topmachines.component';
 import { SpecialcompComponent } from './featured/specialcomp/specialcomp.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -39,7 +40,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     MachinecompComponent,
     TopmachinesComponent,
     SpecialcompComponent,
-    ContactusComponent
+    ContactusComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

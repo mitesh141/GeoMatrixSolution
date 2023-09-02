@@ -1,0 +1,19 @@
+<div class="gallery-main">
+    <div *ngFor="let image of images" class="gallery" (click)="showImage(image.src, image.title, image.subtitle, image.desc)">
+        <img [src]="image.src" alt="" width="180" height="120">
+        <div class="desc">{{ image.desc }}</div>
+    </div>
+
+    <div class="overlay" [ngClass]="{'show-overlay': overlaySrc}" (click)="hideImage()">
+        <span class="close" (click)="hideImage()">&times;</span>
+        <div class="overlay-content">
+            <img id="overlay-image" [src]="overlaySrc" alt="">
+            <div class="overlay-text">
+                <h2 class="overlay-title">{{ overlayTitle }}</h2>
+                <h3 class="overlay-subtitle">{{ overlaySubtitle }}</h3>
+                <p class="overlay-description">{{ overlayDesc }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
