@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ContainerComponent } from './container/container.component';
+import { ServiceComponent } from './service/service.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path:'Contact',component:ContactusComponent
+  },
+  {
+    path:'Service/:id',component:ServiceComponent
   }
 
 

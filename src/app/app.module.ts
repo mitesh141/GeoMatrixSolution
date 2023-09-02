@@ -20,6 +20,7 @@ import { TopmachinesComponent } from './topmachines/topmachines.component';
 import { SpecialcompComponent } from './featured/specialcomp/specialcomp.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -41,7 +42,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     TopmachinesComponent,
     SpecialcompComponent,
     ContactusComponent,
-    GalleryComponent
+    GalleryComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
