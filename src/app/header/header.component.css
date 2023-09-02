@@ -1,28 +1,32 @@
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .bottom-left {
-    position: absolute;
-    top: 30%;
-    /* left: 70%; */
-    left: 16px;
-    font-size: x-large;
-  }
-  
-  .top-left {
-    position: absolute;
-    top: 40%;
-    left: 60%;
-    left: 16px;
-    color: red;
-    font-size: larger;
-  }
-  
-  
-img{
-    width: 100%;
-    height: auto;
-  }
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  position: absolute;
+  top: 35%;
+  left: 25%; /* Adjust the left value to position the text as desired */
+  transform: translate(-50%, -50%);
+  padding: 10px; /* Optional: Add padding to the text */
+  font-size: 18px; /* Optional: Adjust the font size */
+  text-align: left; /* Align the text to the left */
+}
+
+.text h1 {
+  margin: 0; /* Remove default margin for the title */
+  font-size: 54px; /* Adjust the title font size */
+  color: white;
+}
+
+.text p {
+  margin: 0; /* Remove default margin for the subtitle */
+  font-size: 18px; /* Adjust the subtitle font size */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  color: rgb(195, 193, 193);
+  margin-top: 20px;
+}

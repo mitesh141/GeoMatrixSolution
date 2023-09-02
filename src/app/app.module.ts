@@ -14,11 +14,12 @@ import { ClientsComponent } from './clients/clients.component';
 import { FooterComponent } from './footer/footer.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagePopupComponent } from './image-popup/image-popup.component';
-import { FixtureComponent } from './fixture/fixture.component';
-import { MachinecompComponent } from './machinecomp/machinecomp.component';
+import { FixtureComponent } from './featured/fixture/fixture.component';
+import { MachinecompComponent } from './featured/machinecomp/machinecomp.component';
 import { TopmachinesComponent } from './topmachines/topmachines.component';
-import { SpecialcompComponent } from './specialcomp/specialcomp.component';
+import { SpecialcompComponent } from './featured/specialcomp/specialcomp.component';
 import { ContactusComponent } from './contactus/contactus.component';
+
 
 
 @NgModule({
