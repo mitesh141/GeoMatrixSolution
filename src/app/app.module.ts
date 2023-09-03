@@ -21,6 +21,8 @@ import { SpecialcompComponent } from './featured/specialcomp/specialcomp.compone
 import { ContactusComponent } from './contactus/contactus.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ServiceComponent } from './service/service.component';
+import { ServicesmainComponent } from './servicesmain/servicesmain.component';
+import { ImagsliderComponent } from './imagslider/imagslider.component';
 
 
 
@@ -43,7 +45,9 @@ import { ServiceComponent } from './service/service.component';
     SpecialcompComponent,
     ContactusComponent,
     GalleryComponent,
-    ServiceComponent
+    ServiceComponent,
+    ServicesmainComponent,
+    ImagsliderComponent
   ],
   imports: [
     BrowserModule,

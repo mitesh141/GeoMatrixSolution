@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ContainerComponent } from './container/container.component';
 import { ServiceComponent } from './service/service.component';
+import { ServicesmainComponent } from './servicesmain/servicesmain.component';
+
 
 const routes: Routes = [
   {
@@ -13,6 +15,9 @@ const routes: Routes = [
   },
   {
     path:'Service/:id',component:ServiceComponent
+  },
+  {
+    path:'Services',component:ServicesmainComponent
   }
 
 

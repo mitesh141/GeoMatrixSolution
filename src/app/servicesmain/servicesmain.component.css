@@ -1,0 +1,45 @@
+
+
+.inspection {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Push content to the sides */
+    align-items: center; /* Vertically center content */
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+.heading{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+  
+  .content {
+    flex: 1; /* Allow the content to grow and fill available space */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .imgsin {
+    flex: 1; /* Allow the image to grow and fill available space */
+    text-align: right; /* Align the image to the right */
+  }
+  
+  div .imag {
+    max-width: 100%; /* Make the image responsive by scaling it within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .inspection {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      text-align: center; /* Center align text content */
+    }
+  
+    .imgs {
+      text-align: center; /* Center align the image on smaller screens */
+    }
+  }
+  
+  /* If you want to add more styling, such as max-width for the image or adjust margins/paddings, you can do so here */
+  
