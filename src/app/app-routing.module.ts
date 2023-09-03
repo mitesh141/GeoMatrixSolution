@@ -13,6 +13,7 @@ const routes: Routes = [
   {
     path:'Contact',component:ContactusComponent
   },
+  
   {
     path:'Service/:id',component:ServiceComponent
   },

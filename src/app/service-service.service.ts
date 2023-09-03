@@ -7,15 +7,15 @@ export class ServiceServiceService {
    fixturesImages = [
     {
         src: './assets/services/fixture1.png',
-        title: 'Fixture 1',
-        subtitle: 'Fixture 1',
-        desc: 'fixture 1 decription '
+        title: 'Fixture 2',
+        subtitle: '',
+        desc: ''
     },
     {
       src: './assets/services/fixture2.png',
-      title: 'Fixture 1',
-      subtitle: 'Fixture 1',
-      desc: 'Description 1'
+      title: 'Fixture 2',
+      subtitle: '',
+      desc: ''
     }
     // Add more images here
   ];
@@ -23,39 +23,39 @@ export class ServiceServiceService {
   spclImages = [
     {
         src: './assets/services/specialcomp1.jpg',
-        title: 'Image Title 1',
-        subtitle: 'Subtitle 1',
-        desc: 'Description 1'
+        title: 'Special Component 1',
+        subtitle: '',
+        desc: ''
     },
     {
       src: './assets/services/specialcomp2.jpg',
-      title: 'Image Title 1',
-      subtitle: 'Subtitle 1',
-      desc: 'Description 1'
+      title: 'Special Component 2',
+      subtitle: '',
+      desc: ''
     },
     {
     src: './assets/services/specialcomp3.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Special Component 3',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/specialcomp4.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Special Component 4',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/specialcomp5.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Special Component 5',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/specialcomp6.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Special Component 6',
+    subtitle: '',
+    desc: ''
   }
     // Add more images here
   ];
@@ -63,53 +63,53 @@ export class ServiceServiceService {
   machinedImages = [
     {
         src: './assets/services/machined com1.jpg',
-        title: 'Image Title 1',
-        subtitle: 'Subtitle 1',
-        desc: 'Description 1'
+        title: 'Machined Component 1',
+        subtitle: '',
+        desc: ''
     },
     {
       src: './assets/services/machined comp2.jpg',
-      title: 'Image Title 1',
-      subtitle: 'Subtitle 1',
-      desc: 'Description 1'
+      title: 'Machined Component 2',
+      subtitle: '',
+      desc: ''
     },
     {
     src: './assets/services/machined comp3.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Machined Component 3',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/machined comp4.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Machined Component 4',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/machined comp5.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Machined Component 5',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/machined comp6.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Machined Component 6',
+    subtitle: '',
+    desc: ''
   },
   {
     src: './assets/services/machined comp7.jpg',
-    title: 'Image Title 1',
-    subtitle: 'Subtitle 1',
-    desc: 'Description 1'
+    title: 'Machined Component 7',
+    subtitle: '',
+    desc: ''
   }
     // Add more images here
   ];
 
   services = [
-    {id:101, serviceName: 'PHP', author:'Mally', price:'567567898$', description:'Desc for PHP service',images: this.fixturesImages},
-    {id:102,serviceName: 'HTML', author:'Myth', price:'0.00002$', description:'Desc for HTML service', images: this.spclImages},
-    {id:103, serviceName: 'MongoDB', author:'Harry', price:'0.0000$', description:'Desc for MongoDB service', images: this.machinedImages}
+    {id:101, serviceName: 'Fixtures', author:'Mally', price:'567567898$', description:'Desc for PHP service',images: this.fixturesImages},
+    {id:102,serviceName: 'Special Component', author:'Myth', price:'0.00002$', description:'Desc for HTML service', images: this.spclImages},
+    {id:103, serviceName: 'Machined Component', author:'Harry', price:'0.0000$', description:'Desc for MongoDB service', images: this.machinedImages}
    ]
 
   constructor() { }
