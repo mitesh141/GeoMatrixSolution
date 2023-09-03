@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./imagslider.component.css']
 })
 export class ImagsliderComponent implements OnInit {
-
   slideIndex = 1;
 
   constructor() { }
@@ -25,30 +24,17 @@ export class ImagsliderComponent implements OnInit {
 
   showSlides(n: number) {
     let i;
-    const slides = document.getElementsByClassName("mySlides") as HTMLCollectionOf<HTMLElement>;
-    const dots = document.getElementsByClassName("demo") as HTMLCollectionOf<HTMLElement>;
-    const captionText = document.getElementById("caption");
-
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
     if (n > slides.length) { this.slideIndex = 1; }
     if (n < 1) { this.slideIndex = slides.length; }
-    
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      (slides[i] as HTMLElement).style.display = "none";
     }
-
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-
-    slides[this.slideIndex - 1].style.display = "block";
+    (slides[this.slideIndex - 1] as HTMLElement).style.display = "block";
     dots[this.slideIndex - 1].className += " active";
-
-    if (captionText) {
-      const altAttribute = dots[this.slideIndex - 1].getAttribute('alt');
-      if (altAttribute) {
-        captionText.innerHTML = altAttribute;
-      }
-    }
   }
 }
-
