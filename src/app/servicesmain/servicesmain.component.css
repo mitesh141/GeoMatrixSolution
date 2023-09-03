@@ -10,9 +10,19 @@
   }
 .heading{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     margin-top: 30px;
+}
+.heading::after{
+  content: "";
+    height: 3px;
+    width: 70px;
+    background-color: black;
+    
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
   
   .content {
