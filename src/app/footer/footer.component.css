@@ -78,7 +78,7 @@ footer {
     font-size: 24px;
 }
 .contact-icons p{
-    color: rgb(219, 216, 216);
+    color:white;
 }
 /* Styling for LinkedIn and WhatsApp icons */
 .social-icons-info {
@@ -97,23 +97,28 @@ footer {
 }
 
 /* Media queries for responsiveness */
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
     footer {
         padding: 10px;
     }
-    .social-details{
-        padding-right: 40px;
-        
-    }
+   .social-details{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: white;
+   }
     .quick-links {
         margin-top: 10px;
+        display: none;
     }
     .maps {
         border-radius: 10px;
     }
+    .footer-bottom{
+        font-size: 10px;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media  (min-width: 768px) {
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -122,6 +127,8 @@ footer {
     .social-details {
         padding-right: 90px;
         padding: 0;
+        color: white;
+        
     }
     .quick-links {
         margin-top: 0;
@@ -129,4 +136,8 @@ footer {
     .maps {
         width: 50%;
     }
+    h1 p a {
+        font-size: 10px;
+    }
+    
 }

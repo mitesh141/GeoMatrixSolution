@@ -104,3 +104,25 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+@media screen and (max-width: 768px) {
+.slideshow-container{
+  display: none;
+}
+  .heading{
+    font-size: 20px;
+    display: none;
+  }
+  .dots{
+    display: none;
+  }
+  .heading::after{
+    content: "";
+      height: 3px;
+      width: 55px;
+      background-color: black;
+      
+      display: block;
+      margin: auto;
+      margin-top: 6px;
+  }
+}

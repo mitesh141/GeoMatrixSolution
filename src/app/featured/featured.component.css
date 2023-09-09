@@ -4,13 +4,20 @@
   box-sizing: border-box;
 }
 
+/* Default styles for larger screens */
 .top-head {
   text-align: center;
   padding-top: 60px;
   color: blue;
+  font-size: 36px; /* Adjust the font size as needed */
 }
 
-.top-head::after {
+.top-headf {
+  text-align: center;
+  color: rgb(1, 1, 105);
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.top-headf::after{
   content: "";
   height: 3px;
   width: 70px;
@@ -20,7 +27,6 @@
   margin: auto;
   margin-top: 10px;
 }
-
 
 .card-main {
   width: 100%;
@@ -113,6 +119,12 @@
   margin-top: 20px;
 
 }
+span{
+  color: #fff;
+}
+.card-mobile{
+  display: none;
+}
 .scale-in-bottom {
 	-webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -149,3 +161,103 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 768px) {
+  .top-head {
+    font-size: 22px; /* Adjust the font size for smaller screens */
+    margin-top: 0%;
+    display: none;
+  }
+
+  .top-headf {
+    font-size: 15px;
+    display: none; /* Adjust the font size for smaller screens */
+  }
+  .card-container{
+    display: none;
+  }
+  .card{
+    display: none;
+  }
+  .card-mobile {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 50px;
+    margin-top:150px;
+    margin-bottom:150px;
+    
+  }
+  span{
+    color: blue;
+  }
+
+
+  .mheading {
+    text-align: center;
+    padding: 9px;
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+  
+  }
+
+  .mheading::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+
+  }
+
+  /* Basic styling for the card */
+  .cardmv {
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin: 10px;
+
+    
+  }
+
+  /* Style for the "View More" button */
+  .btnm {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+  }
+
+  /* Style for the title */
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Hover effect */
+  .cardmv:hover {
+    transform: scale(1.05);
+    /* Enlarge the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a shadow on hover */
+  }
+}
+/* mobile view  code*/

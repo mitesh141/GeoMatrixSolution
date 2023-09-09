@@ -9,7 +9,7 @@
 
 
 .about-section{
-    background: url(https://www.kbengineering.in/assets/images/geo_img/geo.jpg) no-repeat left;
+    background: url(https://ik.imagekit.io/ht0xrdoeg/home/gmsservices.jpg?updatedAt=1693814082647) no-repeat left;
     background-size: 65%;
    
     overflow: hidden;
@@ -118,6 +118,11 @@
       -webkit-transform-origin: 50% 100%;
               transform-origin: 50% 100%;
       opacity: 1;
+    }
+  }
+  @media (max-width: 768px){
+    .about-section{
+        display: none;
     }
   }
   

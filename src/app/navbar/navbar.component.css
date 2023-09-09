@@ -1,135 +1,145 @@
+* {
+  box-sizing: border-box;
+}
 
-.navbar {
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
 
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top of the viewport */
+  padding: 40px; /* Add padding to the contents */
+  display: flex; /* Display contents in a row */
+  justify-content: space-between; /* Align contents at the start and end */
+  align-items: center; /* Vertically center contents */
+  z-index: 1000; 
+}
+.nav > .nav-header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  /* background: #001128; */
-  background: white;
-  /* Adjusted box shadow for a gradient border effect */
-  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
-  backdrop-filter: blur(5px);
-  z-index: 1000;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+  flex-direction: row;
 }
-
-#heading{
-  color: black;
-  font-size: larger;
-}
-
-#subheading{
+.head1 > .title{
   color: red;
+  font-size: 15px;
 }
-
-.logoAndCompName{
-  margin-left: 40px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-bottom: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+.head1 > .sub{
+  font-size: 12px;
 }
-.nav-list a:hover{
-  background-color: rgb(79, 79, 79);
-  color: white;
-  padding: 9px;
-  transition: ease;
-  
-
-}
-
-.logo {
-
-  /* margin-top: 4; */
-  
-  padding-left: 20px;
-  padding-bottom: 4px;
-
-
-}
-
-.menu-icon {
-  display: none;
-  /* Hidden by default on larger screens */
+.head1{
+  margin-left:20px ;
+  margin-top: 11px;
   cursor: pointer;
-
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  /* background-color: #333; */
-  margin: 3px 0;
+
+.nav > .nav-header > .nav-title img {
+  max-height: 50px; /* Set the max height for the logo */
+  padding-left: 60px;
+  cursor: pointer;
 }
 
-.nav-list {
-  list-style: none;
-  margin: 0;
-  margin-right: 40px;
-  padding: 9px;
-  display: flex;
-  gap: 20px;
-  /* padding-right: 60px; */
+.nav > .nav-btn {
+  display: none;
 }
 
-.nav-list li {
-  margin-left: 40px;
-  /* padding: 20px; */
-  /* padding-right: 20px; */
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
 }
 
-.nav-list a {
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 30px;
   text-decoration: none;
-  color: black;
-  
+  color: #000000;
 }
 
+.nav > .nav-links > a:hover {
+  background-color: rgba(15, 15, 15, 0.3);
+  border-radius: 5px;
+}
 
+.nav > #nav-check {
+  display: none;
+}
 
-
-
-
-/* Media Query for mobile devices */
-/* Media Query for mobile devices */
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
+@media (max-width: 600px) {
+  .nav > .nav-header > .nav-title img{
+    padding: 0px;
+    
   }
-
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+  .head1 > .title{
+    color: red;
+    font-size: 11px;
+  }
+  .head1 > .sub{
+    font-size: 8px;
+  }
+  .head1{
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  
+  .nav > .nav-btn {
+    display: inline-block;
     position: absolute;
+    right: 0px;
+    top: 15px;
+  }
+
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    
+  }
+
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #010101;
+    
+    
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #7e7a7a;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
     top: 70px;
-    left: 70%;
-    /* Center horizontally */
-    transform: translateX(-50%);
-    /* Center horizontally */
-    width: 80%;
-    /* Adjust the width as needed */
-    padding: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    left: 0px;
+    
   }
 
-  .nav-list.active {
-    display: flex;
-    align-items: center;
-    /* Center vertically */
-    justify-content: center;
-    /* Center horizontally */
-    flex-direction: column;
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    color: white;
+   
   }
 
-  .nav-list li {
-    margin: 10px 0;
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
 }

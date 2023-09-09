@@ -2,33 +2,36 @@
 
 
 
-    <div class="navbar">
-        <div class="logoAndCompName">
-            <div class="logo"><img routerLink="" src="./assets/home/GMSlogo.png" style="height: 53px;width: 103px;" alt="">
-            </div>
-            <div class="companyName">
-                <p id="heading">Geomatrix Machining Solution Pvt. Ltd</p>
-                <p id="subheading">Sister company of K.B. Engineering Works</p>
-            </div>
-        </div>
-        <div class="menu-icon" id="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-list" id="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a routerLink="/Services">Services</a></li>
-            <li><a routerLink="/Contact">Contact</a></li>
-        </ul>
-        <!-- <img src="/assets/banner.png" style="width: auto;height: 100%;" alt=""> -->
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div routerLink="" style="cursor: pointer;" class="nav-title">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/home/GMSlogo.png?updatedAt=1693814081413g"  alt="Logo"> <!-- Replace with your logo image URL -->
+      </div>
+<div routerLink="" class="head1">
+  <p class="title">Geomatrix Machining Solution Pvt. Ltd</p>
+  <p class="sub">(Sister company of K.B. Engineering Works)</p>
+      <!-- <span class="a1">Geomatrix Machining Solution <br>Geomatrix Machining Solution</span> -->
+      <!-- <span class="a2">Geomatrix Machining Solution</span> -->
+</div>
+      
     </div>
-    <script>const menuIcon = document.getElementById('menu-icon');
-        const navList = document.getElementById('nav-list');
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
 
-        menuIcon.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });</script>
+    <div class="nav-links">
+      <a routerLink="" >Home</a>
+      <a routerLink="/Services">Services</a>
+      <a routerLink="/Contact" >Contact</a>
+      
+    </div>
+  </div>
+
 
 
 

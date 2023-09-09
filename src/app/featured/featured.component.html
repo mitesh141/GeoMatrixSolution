@@ -1,9 +1,10 @@
 <h1 [ngClass]="{'scale-in-bottom': isInView}" class="top-head">Our Services</h1>
+<h3 class="top-headf"> Click on the cards for more information</h3>
   <!-- <div class="card-main"> -->
     <div [ngClass]="{'scale-in-bottom': isInView}" class="card-container">
       <!-- Card 1 -->
       <div class="card">
-        <img src=".\assets\services\fixture2.png" class="card-img" alt="">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/fixture2.png?updatedAt=1693813995361" class="card-img" alt="">
         <div class="card-body">
           <h1 class="card-title">Fixtures</h1>
           <p class="card-sub-title"></p>
@@ -19,7 +20,7 @@
 
       <!-- Card 2 -->
       <div class="card">
-        <img src=".\assets\services\machined comp2.jpg" class="card-img" alt="">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/machined%20comp2.jpg?updatedAt=1693813993497" class="card-img" alt="">
         <div class="card-body">
           <h1 class="card-title">Special Components</h1>
           <p class="card-sub-title"></p>
@@ -35,7 +36,7 @@
 
       <!-- Card 3 -->
       <div class="card">
-        <img src=".\assets\services\machined comp4.jpg" class="card-img" alt="">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/machined%20comp4.jpg?updatedAt=1693813993257" class="card-img" alt="">
         <div class="card-body">
           <h1 class="card-title">Machined Components</h1>
           <p class="card-sub-title"></p>
@@ -50,4 +51,32 @@
       </div>
 
      
+    </div>
+    <!-- /* mobile view  code*/ -->
+    <div [ngClass]="{'scale-in-bottom': isInView}" class="mheading">
+      <span>Our Services</span>
+    </div>
+    <div class="card-mobile">
+      
+  
+      <div [ngClass]="{'scale-in-bottom': isInView}" class="cardmv">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/fixture2.png?updatedAt=1693813995361" alt="Image 1"
+          style="max-width: 100%;">
+        <h2 class="title">Fixtures</h2>
+        <a class="btnm" routerLink="/Service/101">View More</a>
+      </div>
+  
+      <div [ngClass]="{'scale-in-bottom': isInView}" class="cardmv">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/specialcomp1.jpg?updatedAt=1693813997277" alt="Image 2"
+          style="max-width: 100%;">
+        <h2 class="title">Special Component</h2>
+        <a class="btnm" routerLink="/Service/102">View More</a>
+      </div>
+  
+      <div [ngClass]="{'scale-in-bottom': isInView}" class="cardmv">
+        <img src="https://ik.imagekit.io/ht0xrdoeg/services/machined%20comp2.jpg?updatedAt=1693813993497" alt="Image 3"
+          style="max-width: 100%;">
+        <h2 class="title">Machined Component</h2>
+        <a class="btnm" routerLink="/Service/103">View More</a>
+      </div>
     </div>

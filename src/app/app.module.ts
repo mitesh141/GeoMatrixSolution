@@ -26,6 +26,7 @@ import { ImagsliderComponent } from './imagslider/imagslider.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { ImagsliderComponent } from './imagslider/imagslider.component';
     GalleryComponent,
     ServiceComponent,
     ServicesmainComponent,
-    ImagsliderComponent
+    ImagsliderComponent,
+    
   ],
   imports: [
     BrowserModule,

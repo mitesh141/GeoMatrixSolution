@@ -7,6 +7,7 @@
     align-items: center; /* Vertically center content */
     max-width: 1000px; /* Set a maximum width for the container */
     margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
   }
 .heading{
     text-align: center;
@@ -50,7 +51,93 @@
     .imgs {
       text-align: center; /* Center align the image on smaller screens */
     }
+    .heading{
+      font-size: 20px;
+    }
+    .heading::after{
+      content: "";
+        height: 3px;
+        width: 55px;
+        background-color: black;
+        
+        display: block;
+        margin: auto;
+        margin-top: 6px;
+    }
   }
   
   /* If you want to add more styling, such as max-width for the image or adjust margins/paddings, you can do so here */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
   
+  .container {
+    text-align: center;
+    padding: 1px;
+  }
+  
+  h2 {
+    color: #000000;
+    display: none;
+  }
+  h2::after{
+    content: "";
+      height: 3px;
+      width: 70px;
+      background-color: black;
+      
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+      display: none;
+  }
+  
+  .container p {
+    color: #666;
+    display: none;
+  }
+  
+  div.scroll-container {
+    background: white;
+    border: 1px solid black;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide by default */
+  }
+  
+  div.scroll-container img {
+    padding: 1px;
+    margin: 10px 10px 0 0;
+    /* border: 2px solid #fff; */
+    border-radius: 10px;
+    transition: transform 0.2s;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    div.scroll-container {
+      overflow-x: auto;
+      display: block; /* Show on mobile devices */
+      
+    }
+    h2{
+
+      display: block;
+    }
+    h2::after{
+      display: block;
+      margin-bottom: 10px;
+    }
+    .container p{
+      display: block;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+  }

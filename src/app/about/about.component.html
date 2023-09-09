@@ -12,13 +12,13 @@
                     components that not only meet but exceed the stringent requirements of contemporary industries. Our
                     inception was catalyzed by a visionary pursuit to revolutionize precision engineering. As of today,
                     we proudly reign as the premier source for bespoke machining solutions, intricately customizing
-                    solutions that resonate with the very pulse of mechanized excellence..</p>
-                
+                    solutions that resonate with the very pulse of mechanized excellence.</p>
+
 
                 <!-- Popup trial By Mally -->
                 <div>
                     <!-- main-component.component.html -->
-                    <button (click)="openPopup()">View TVU Certification</button>
+                    <button (click)="openPopup()">View TUV Certification</button>
                     <app-image-popup *ngIf="showPopup" (close)="closePopup()"></app-image-popup>
                 </div>
 
@@ -29,5 +29,21 @@
             <img class="image2" src="./assets/home/abt2.png">
         </div>
 
+    </div>
+</div>
+<div  class="about-section-mobile">
+    <h2 [ngClass]="{'scale-in-bottom': isInView}">About Us</h2>
+    <img class="abtimg" [ngClass]="{'scale-in-bottom': isInView}" src="https://ik.imagekit.io/ht0xrdoeg/home/abt2.png?updatedAt=1693814081675" alt="">
+    <h3 [ngClass]="{'scale-in-bottom': isInView}">Geomatrix Machining Solutions</h3>
+    <p [ngClass]="{'scale-in-bottom': isInView}">seamlessly integrates cutting-edge technological advancements with a heritage steeped in the art of
+        craftsmanship. Our core focus lies in the engineering and production of intricately machined
+        components that not only meet but exceed the stringent requirements of contemporary industries. Our
+        inception was catalyzed by a visionary pursuit to revolutionize precision engineering. As of today,
+        we proudly reign as the premier source for bespoke machining solutions, intricately customizing
+        solutions that resonate with the very pulse of mechanized excellence.</p>
+    <div >
+        <!-- main-component.component.html -->
+        <button (click)="openPopup()">View TUV Certification</button>
+        <app-image-popup *ngIf="showPopup" (close)="closePopup()"></app-image-popup>
     </div>
 </div>
