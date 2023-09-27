@@ -21,7 +21,7 @@
     width: 55%;
     float: right;
     background-color: #fdfdfd;
-    padding: 120px;
+    padding: 100px;
     border: 1px solid black;
     
     
@@ -46,7 +46,7 @@
 }
 
 .text{
-    font-size: 13px;
+    font-size: 16px;
     color: #545454;
     line-height: 30px;
     text-align: justify;
