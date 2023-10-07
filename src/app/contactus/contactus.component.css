@@ -137,7 +137,7 @@
     margin-bottom: 10px;
 }
 
-.inputBox input[ type="submit"] {
+.inputBox input {
     background: rgb(124, 5, 243);
     border: none;
     color: white;
