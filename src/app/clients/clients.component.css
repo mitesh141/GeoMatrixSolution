@@ -10,7 +10,7 @@
 }
 
 .frame {
-    width: 1000px;
+    width: 1200px;
     /* Set the fixed width of the frame */
     height: 220px;
     /* Set the fixed height of the frame */
@@ -21,7 +21,7 @@
 
 .content-container {
     display: flex;
-    animation: linearMove 9s linear infinite;
+    animation: linearMove 14s linear infinite;
 }
 
 .content {
@@ -72,9 +72,9 @@
         height: 120px;
     }
 
-    h1 {
-        font-size: 17px;
-        margin-top: 50px;
+    h2 {
+        font-size: 20px;
+        padding-top: 50px;
 
     }
 

@@ -133,8 +133,8 @@
       color: white;
   }
   .about-section-mobile h3{
-    color: rgb(254, 0, 0);
-    text-shadow: 5px 5px 10px white;
+    color: white;
+    text-shadow: 5px 5px 10px rgb(42, 36, 36);
   }
   .abtimg{
     width: 100%;
