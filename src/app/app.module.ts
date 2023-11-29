@@ -23,6 +23,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ServiceComponent } from './service/service.component';
 import { ServicesmainComponent } from './servicesmain/servicesmain.component';
 import { ImagsliderComponent } from './imagslider/imagslider.component';
+import { HomecontactComponent } from './homecontact/homecontact.component';
+import { InspectionComponent } from './inspection/inspection.component';
 
 
 
@@ -49,6 +51,8 @@ import { ImagsliderComponent } from './imagslider/imagslider.component';
     ServiceComponent,
     ServicesmainComponent,
     ImagsliderComponent,
+    HomecontactComponent,
+    InspectionComponent,
     
   ],
   imports: [

@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  Ripple,
+  initTE,
+} from "tw-elements";
+initTE({ Ripple });
 
 @Component({
   selector: 'app-footer',

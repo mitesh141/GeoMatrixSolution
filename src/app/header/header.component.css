@@ -1,49 +1,3 @@
-.container {
-  position: relative;
-}
-
-.banner {
-  position: relative;
-  display: inline-block;
-}
-
-.text {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-  /* Adjust the left value to position the text as desired */
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  /* Optional: Add padding to the text */
-  font-size: 18px;
-  /* Optional: Adjust the font size */
-  text-align: left;
-  /* Align the text to the left */
-}
-
-.text h1 {
-  margin: 0;
-  /* Remove default margin for the title */
-  font-size: 54px;
-  /* Adjust the title font size */
-  color: white;
-}
-
-.text p {
-  margin: 0;
-  /* Remove default margin for the subtitle */
-  font-size: 28px;
-  /* Adjust the subtitle font size */
-  line-height: 1.2;
-  /* Adjust line height for better spacing */
-  color: rgb(211, 205, 205);
-  margin-top: 20px;
-}
-
-.mobilebanner {
-  display: none;
-  /* Hide the mobile banner by default */
-}
 
 @media screen and (max-width: 768px) {
   .container.desktop {
@@ -58,7 +12,7 @@
   }
   img{
     max-width: 100%; /* Set the maximum width to 100% to fit the screen */
-    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    height: 300px; /* Automatically adjust the height to maintain the aspect ratio */
     width: 100%;
   }
 }
