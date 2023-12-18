@@ -1,6 +1,13 @@
 
 
 import { Component, OnInit, HostListener, Renderer2, ElementRef } from '@angular/core';
+import {
+  Modal,
+  Ripple,
+  Tooltip,
+  Popover,
+  initTE,
+} from "tw-elements";
 
 @Component({
   selector: 'app-about',
@@ -14,6 +21,7 @@ export class AboutComponent{
 
   ngOnInit(): void {
     // Initialize the 'isInView' value when the component loads
+    initTE({ Modal, Ripple, Tooltip, Popover });
     this.checkDivInView();
   }
 
