@@ -113,12 +113,18 @@
     max-width: 100%;
     height: auto;
   }
+  .mob-cal{
+    display: none;
+  }
   
   @media (max-width: 768px) {
     div.scroll-container {
       overflow-x: auto;
       display: none; /* Show on mobile devices */
       
+    }
+    .mob-cal{
+      display: block;
     }
     .heading{
       display: none;
